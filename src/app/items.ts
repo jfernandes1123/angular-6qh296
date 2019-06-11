@@ -2,12 +2,12 @@ export const items = [
   {
     name: 'item 1',
     price: 799,
-    description: 'A large phone with one of the best screens'
+    description: 'description'
   },
   {
     name: 'item 2',
     price: 699,
-    description: 'A great phone with one of the best cameras'
+    description: 'description'
   },
   {
     name: 'item 3',
