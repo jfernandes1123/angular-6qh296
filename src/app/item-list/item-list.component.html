@@ -1,7 +1,7 @@
 <h2>Items</h2>
-<div *ngFor="let item of items">
+<div *ngFor="let item of items; index as itemId">
   <h3>
-    <a [title]="item.name + ' details'">
+    <a [title]="item.name + ' details'" [routerLink]="['/items', itemId]">
       {{ item.name }}
     </a>
   </h3>
@@ -12,7 +12,8 @@
     Share
   </button>
   <app-item-alerts
-    [item]="item">
+    [item]="item"
+    (notify)="onNotify()">
   </app-item-alerts>
 </div>
 <!-- 

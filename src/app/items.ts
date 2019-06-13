@@ -2,17 +2,17 @@ export const items = [
   {
     name: 'item 1',
     price: 799,
-    description: 'description'
+    description: 'this is a description for item 1'
   },
   {
     name: 'item 2',
     price: 699,
-    description: 'description'
+    description: 'this is a description for item 2'
   },
   {
     name: 'item 3',
     price: 299,
-    description: ''
+    description: 'this is a description for item 3'
   }
 ];
 

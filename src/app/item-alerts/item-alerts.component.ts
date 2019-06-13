@@ -10,8 +10,6 @@ export class ItemAlertsComponent implements OnInit {
   @Input() item;
   @Output() notify = new EventEmitter();
   constructor() { }
-
   ngOnInit() {
   }
-
 }

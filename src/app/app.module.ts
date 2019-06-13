@@ -7,22 +7,29 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { ItemAlertsComponent } from './item-alerts/item-alerts.component';
-
+import { ItemDetailsComponent } from './item-details/item-details.component';
+import { CartService } from './cart.service';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ItemListComponent },
+      { path: 'items/:itemId', component: ItemDetailsComponent },
+      { path: 'cart', component: CartComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ItemListComponent,
-    ItemAlertsComponent
+    ItemAlertsComponent,
+    ItemDetailsComponent,
+    CartComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [CartService ]
 })
 export class AppModule { }
 

@@ -8,10 +8,10 @@ import { items } from '../items';
 export class ItemListComponent {
   items = items;
   share() {
-    window.alert('items');
+    window.alert('testing share dialog');
   }
   onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+    window.alert('You will be notified when this item self destructs');
   }
 }
 /*
